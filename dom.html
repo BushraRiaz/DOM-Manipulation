@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+</head>
+
+<body>
+  <!-- <ul id="riaz" date='Bushi'> -->
+    <!-- <li class="container">First element</li> -->
+    <!-- <li class="container">Scond Element</li> -->
+    <!-- <li class="container">Third Element</li> -->
+  <!-- </ul> -->
+  <!-- <div id="firstDiv">first Div</div> -->
+  <!-- <table> -->
+    <!-- <tr> -->
+      <!-- <td>One</td> -->
+      <!-- <td>Two</td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+      <!-- <td>Three</td> -->
+      <!-- <td>Four</td> -->
+    <!-- </tr> -->
+  <!-- </table> -->
+  <button id="clickbtn" onclick="alert('Hello')">Click Me</button>
+  <script>
+    //Root Element
+    // console.log(document.documentElement);
+    // console.log(document.head);
+    // console.log(document.body);
+
+    //ChildNode
+    // console.log(document.body.children);
+    // console.log(document.body.firstElementChild);
+    // console.log(document.body.lastElementChild);
+    // for(node of document.body.children){
+    // console.log(node);
+    // }
+    // const ChildNodeOfBody = Array.from(document.body.children);
+    // console.log(ChildNodeOfBody);
+
+    //Sbilings
+    // const ulTag= document.body.children[0];
+    // console.log(ulTag.nextElementSibling);
+    // const firstLi=ulTag.children[0];
+    // const secondLi=ulTag.children[1];
+    // console.log(secondLi.previousElementSibling.textContent);
+
+    // const tableTag = document.body.children[1];
+    // console.log(tableTag.rows);
+    // console.log(tableTag.tBodies[0].rows[0].cells[0].textContent);
+    // console.log(tableTag.tBodies[0].rows[0].cells[1].textContent);
+    // console.log(tableTag.tBodies[0].rows[1].cells[0].textContent);
+    // console.log(tableTag.tBodies[0].rows[1].cells[1].textContent);
+    // console.log(tableTag.tBodies[0].rows[1].cells[1].style= 'background-color:blue;');
+
+    // querySelector...---> is static while getelementby..-->dynamic`
+    // const liTag = document.getElementById('riaz');
+    // console.log(liTag.style.backgroundColor = 'Red');
+    // const listItems = document.querySelector('.container');
+    // console.log(listItems.style.backgroundColor = 'yellow');
+
+    // ATTRIBUTES
+    // console.log(riaz.getAttribute('date'));
+    // console.log(riaz.setAttribute('attribute','riaz'));
+    // console.log(riaz.getAttribute('attribute'));
+    // console.log(riaz.removeAttribute('attribute'));
+
+    // CREATING AND REMOViNG NODE ELEMENTS
+      //  const newDiv = document.createElement('div');
+      //  const newtext = document.createTextNode('hello');
+      //  newDiv.appendChild(newtext);
+      //  body.append(newDiv);
+      //  newDiv.append(newtext);
+      //  newDiv.before(newtext);
+      //  newDiv.after(newtext);
+      //  firstDiv.replaceWith(newDiv)
+      //  firstDiv.remove
+
+    // APPEND--->  to introduce element at the start
+    // PREPEND--->  to introduce element at the end
+
+       function callMe(){
+        alert('Here Gorgeous Bushi');
+       }
+       clickbtn.onclick=callMe
+      //  Agr function ko call kry gein tu begair'click' krny sy alert mily ga.like---> callMe()
+      // Agr function ko pass kry gein tu 'click' krny sy alert mily ga.like---> callMe
+  </script>
+</body>
+
+</html>
